@@ -1,0 +1,27 @@
+/* h1 {
+    color: green;
+}
+
+h2 {
+    color: blue;
+} */
+
+.first-h1 {
+    color: red;
+}
+
+.second-h1 {
+    color: green;
+}
+
+/* .code-title {
+    color: blue;
+}
+
+.part {
+    color: aquamarine;
+} */
+
+.part {
+    font-size: 10px;
+}
