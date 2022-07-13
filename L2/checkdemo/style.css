@@ -1,0 +1,59 @@
+body {
+    background-color: orange;
+    font-family: sans-serif;
+}
+
+table {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 5px;
+    /* font-weight: bold; */
+}
+
+table thead {
+    border-bottom: 1px dashed black;
+}
+
+table tfoot {
+    border-top: 1px dashed black;
+}
+
+table tr td {
+    padding: 8px;
+}
+
+.total {
+    text-align: right;
+}
+
+
+table thead tr td:last-child,
+table tbody tr td:last-child,
+table tfoot tr td:last-child {
+    text-align: right;
+}
+
+/* .total,
+table tfoot tr td:last-child {
+    color: green;
+} */
+
+tfoot {
+    color: green;
+}
+
+thead {
+    color: lightgray;
+}
+
+span {
+    font-size: 12px;
+    color: gray;
+}
+
+tbody tr td:nth-child(2) {
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="submit.html" method="GET">
+        <div>
+            <label for="name">Insert name</label>
+            <input name="name" type="text" id="name" placeholder="insert your name">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input name="pass" type="password">
+        </div>
+        <div>
+            <label for="mail">Mail</label>
+            <input name="mail" type="email" id="mail">
+        </div>
+        <div>
+            <div>
+                <label>Mushvig</label>
+                <input name="check" type="checkbox" value="Mushhvig">
+            </div>
+            <div>
+                <label>Firangiz</label>
+                <input name="check" type="checkbox" value="Firangiz">
+            </div>
+            <div>
+                <label>Salman</label>
+                <input name="check" type="checkbox" value="Salman">
+            </div>
+        </div>
+        <div>
+            <div>
+                <div>Gender</div>
+                <label for="male">Male</label>
+                <input id="male" name="gender" type="radio" value="Male">
+                <br>
+                <label>Female</label>
+                <input name="gender" type="radio" value="Female">
+                <br>
+                <label>Undefined</label>
+                <input name="gender" type="radio" value="Undefined">
+            </div>
+        </div>
+        <div>
+            <select name="select">
+                <option name="select" value="mushvig">
+                <option name="select" value="fira">
+                <option name="select" value="salman">
+            </select>
+        </div>
+        <button type="submit">SUBMIT</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
