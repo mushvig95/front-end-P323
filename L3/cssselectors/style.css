@@ -1,0 +1,72 @@
+/* BASIC */
+
+/* * {
+    color: green;
+}
+
+ h3 {
+    color: red;
+}
+
+.text1 {
+    border: 1px dashed brown;
+}
+
+#headingid {
+    font-size: 55px;
+} */
+
+/* .maindiv h3  {
+    color: blue;
+}
+
+.maindiv > h3 {
+    color: magenta;
+}
+
+h3 +p {
+    color: chartreuse;
+}
+
+.text1,
+.text2,
+.text4 {
+    text-decoration: line-through;
+} */
+
+p.text1 {
+color: red;
+}
+
+
+.object {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.object:hover {
+    background-color: aquamarine;
+}
+
+[name="name"]:focus {
+    outline: 1px solid rgb(251, 7, 23);
+    border: none;
+}
+
+.box {
+    width: 200px;
+    border: 1px solid red;
+}
+/* 
+.box p:nth-child(2n) {
+    color: magenta;
+} */
+
+div p:only-child {
+    color: magenta;
+}
+
+li:not(.lastli) {
+    border: 1px solid red;
+}
