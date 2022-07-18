@@ -1,0 +1,31 @@
+.mytext {
+    font-size: 25px;
+    width: fit-content;
+    margin: 100px auto;
+    padding: 10px;
+    position: relative;
+}
+
+
+.mytext::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+.mytext::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+}

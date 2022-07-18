@@ -1,0 +1,16 @@
+/* @font-face {
+    font-family: "AlbertSans";
+    src: url("./fonts/AlbertSans-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "AlbertSans";
+    src: url("./fonts/AlbertSans-ExtraLight.ttf");
+    font-weight: 200;
+} */
+
+* {
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: 100;
+}
