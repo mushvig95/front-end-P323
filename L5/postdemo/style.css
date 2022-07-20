@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.blog >p, .news > p {
+    font-size: 12px;
+}
+
+.left {
+    width: 55%;
+    /* border: 1px solid red; */
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.title > h2 {
+    color: darkolivegreen;
+    font-weight: 400;
+}
+
+.blog, .links {
+    margin-bottom: 20px;
+}
+
+.blog > h3 {
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+.right {
+    /* border: 1px solid blue; */
+    width: 40%;
+    padding-top: 30px;
+}
+
+.main-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news {
+    margin-bottom: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px; */
+}
+
+.news > p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.news > h4 {
+    color: blue;
+    font-weight: 400;
+}
+
+.footer-left img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.footer-right > img {
+    width: 80px;
+}
+
+.footer-flex-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-top: 1px solid gray;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
