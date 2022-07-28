@@ -331,14 +331,59 @@
     /* border: 1px solid magenta; */
     font-weight: 700;
     z-index: -1;
+    width: fit-content;
 }
+
 
 .chef-main-text {
     font-size: 36px;
     line-height: 50px;
     font-weight: 200;
 }
+@media screen and (max-width: 1125px) {
+    .chef-main-text {
+        font-size:25px  ;
+        /* color: #F7C531; */
+    }
+    .chef-block-content::before{
+        font-size: 300px;
+        top: -150px;
+        left: -100px;
 
+    }
+}
+@media screen and (max-width: 961px) {
+    .chef-main-text {
+        font-size:19px  ;
+        /* color: #F7C531; */
+        line-height:25px;
+    }
+    .chef-block-content::before{
+        font-size: 300px;
+        top: -140px;
+        left: -100px;
+        
+    }
+    .chef-block-content{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 729px){
+    .chef-main-text {
+        font-size:15px  ;
+        /* color: #F7C531; */
+
+    }
+    .chef-block-content::before{
+        font-size: 300px;
+        top: -140px;
+        left: -100px;
+        
+    }
+    .chef-block-content{
+        width: 300px;
+    }
+}
 .chef-img {
     /* border: 1px solid magenta; */
     width: 283px;
@@ -393,13 +438,13 @@
 }
 
 .nums {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     margin-top: 100px;
 }
 
 .nums-box {
     width: 857px;
-    /* border: 1px solid green; */
+    border: 1px solid green;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -407,14 +452,21 @@
 
 .nums-item h3 {
     font-size: 32px;
+    border: 1px solid magenta;
     margin-bottom: 8px;
 }
 
 .nums-item p {
+    border: 1px solid black;
     font-size: 20px;
     color: #8B8BA5;
     font-weight: 100;
     text-align: center;
+}
+@media screen and (max-width:920px) {
+    .nums-item h3 {
+        font-size: 25px;
+    }
 }
 
 .app {
