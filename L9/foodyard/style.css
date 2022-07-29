@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+.navbar-expand-lg{
+    width: 950px;
+}
 
 .main-container {
     width: 1440px;
@@ -16,12 +19,35 @@
     /* border: 1px solid red; */
 }
 
+@media screen and (min-width: 991px){
+    .nav-button{
+        position: relative;
+        left: 650px;
+        margin-right: 10px;
+    }
+ 
+}
+@media screen and (max-width: 991px){
+    .navbar-expand-lg{
+        width: 650px;
+    }
+}
+@media screen and (max-width: 700px){
+    /* .nav-button{
+        position: relative;
+        left: 650px;
+        margin-right: 10px;
+    } */
+    .navbar-expand-lg{
+        width: 450px;
+    }
+}
+
 @media screen and (max-width: 1440px) {
     .main-container {
         width: 100%;
     }
 }
-
 @media screen and (max-width: 1120px) {
     .main-container {
         padding: 0 20px;
@@ -214,8 +240,13 @@
     border: none;
     font-size: 18px;
     border-radius: 30px;
+    transition-property: background-color;
+    transition-duration: 5s;
+    transition-timing-function: linear;
 }
-
+.pick-menu:hover{
+    background-color:green;
+}
 .special-try {
     margin-top: 145px;
     /* border: 1px solid red; */
@@ -331,14 +362,59 @@
     /* border: 1px solid magenta; */
     font-weight: 700;
     z-index: -1;
+    width: fit-content;
 }
+
 
 .chef-main-text {
     font-size: 36px;
     line-height: 50px;
     font-weight: 200;
 }
+@media screen and (max-width: 1125px) {
+    .chef-main-text {
+        font-size:25px  ;
+        /* color: #F7C531; */
+    }
+    .chef-block-content::before{
+        font-size: 300px;
+        top: -150px;
+        left: -100px;
 
+    }
+}
+@media screen and (max-width: 961px) {
+    .chef-main-text {
+        font-size:19px  ;
+        /* color: #F7C531; */
+        line-height:25px;
+    }
+    .chef-block-content::before{
+        font-size: 300px;
+        top: -140px;
+        left: -100px;
+        
+    }
+    .chef-block-content{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 729px){
+    .chef-main-text {
+        font-size:15px  ;
+        /* color: #F7C531; */
+
+    }
+    .chef-block-content::before{
+        font-size: 300px;
+        top: -140px;
+        left: -100px;
+        
+    }
+    .chef-block-content{
+        width: 300px;
+    }
+}
 .chef-img {
     /* border: 1px solid magenta; */
     width: 283px;
@@ -407,21 +483,50 @@
 
 .nums-item h3 {
     font-size: 32px;
+    /* border: 1px solid magenta; */
     margin-bottom: 8px;
 }
 
 .nums-item p {
+    /* border: 1px solid black; */
     font-size: 20px;
     color: #8B8BA5;
     font-weight: 100;
     text-align: center;
 }
+@media screen and (max-width:920px) {
+    .nums-item h3 {
+        font-size: 20px;
+        display: flex;
+        justify-content:space-around;
+    }
+    .nums-item p{
+        font-size: 16px;
+    }
+    .nums-box{
+        width:600px ;
+    }
+}
+@media screen and (max-width:680px) {
+    .nums-item h3 {
+        font-size: 16px;
+       
+    }
+    .nums-item p{
+        font-size: 14px;
+    }
+    .nums-box{
+        width:425px ;
+    }
+}
 
 .app {
     margin-top: 70px;
+    /* border: 1px solid black; */
 }
 
 .app-box {
+    /* border: 1px solid red; */
     padding: 0 50px;
     display: flex;
     justify-content: space-between;
@@ -429,13 +534,48 @@
 }
 
 .app-box-content {
+    /* border: 1px solid green; */
     width: 445px;
+    margin-left:20px;
 }
 
 .phone-box a:first-child {
     margin-right: 20px;
 }
-
+@media screen and (max-width:1200px) {
+    .app-box-image img {
+        width:350px;
+        /* border: 1px solid red; */
+    }
+}
+@media screen and (max-width:990px) {
+    .app-box-content h1 {
+       font-size: 35px;
+       line-height: 45px;
+    }
+    .phone-box a img{
+        /* border: 1px solid red; */
+        width: 130px;
+    }
+    .app-box-image img {
+        width:300px;
+    }
+}
+@media screen and (max-width:765px){
+    .app-box{
+        position: relative;
+        /* display:inline-block; */
+        flex-wrap: wrap;
+    }
+     .app-box-content{
+        margin-left: -15px;
+    }
+    .app-box-image img {
+        width: 80%;
+        margin-left: -15px;
+        margin-bottom: 50px;
+    }
+}
 .footer {
     /* border: 1px solid red; */
     display: flex;
@@ -481,4 +621,17 @@
     text-align: center;
     color: #8B8BA5;
     font-size: 18px;
+}
+@media screen and (max-width:980px) {
+    .footer{
+        /* position: relative;
+        display: inline-flex; */
+        flex-wrap: wrap;
+    }
+    .footer ul {
+       margin: 20px;
+    }
+    .logo p{
+        margin-bottom: 30px;
+    }
 }
