@@ -7,7 +7,20 @@
 .navbar-expand-lg{
     width: 950px;
 }
-
+.nav-link{
+    color: #272042 !important;
+    margin-right: 20px;
+    border-bottom: 3px solid transparent;
+    width: fit-content;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.nav-link:hover{
+    border-bottom:3px solid orange ;
+    color: orange !important;
+    
+}
 .main-container {
     width: 1440px;
     /* border: 1px solid red; */
@@ -133,8 +146,12 @@
 
 .slogan-image {
     margin-left: 10px;
-}
+    /* border: 1px solid red; */
 
+}
+.slogan-image:hover{
+    /* width: 500px; */
+}
 @media screen and (max-width: 1400px) {
     .slogan-section {
         padding: 0;
@@ -149,8 +166,6 @@
         width: 100%;
     }
 }
-
-
 .slogan-box {
     width: 425px;
 }
@@ -240,12 +255,13 @@
     border: none;
     font-size: 18px;
     border-radius: 30px;
-    transition-property: background-color;
-    transition-duration: 5s;
+    transition-property:all;
+    transition-duration:3s;
     transition-timing-function: linear;
 }
 .pick-menu:hover{
     background-color:green;
+    color:white;
 }
 .special-try {
     margin-top: 145px;
@@ -284,9 +300,17 @@
 }
 
 .special-section-nav > ul li {
+   
     margin-right: 50px;
     padding-bottom: 10px;
-    border-bottom: 2px solid transparent;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 8px 15px;
+    border-bottom: 2px solid #F7C531;
+    /* border-bottom: 2px solid transparent; */
+    transition-property:all;
+    transition-duration:1s;
+    transition-timing-function:linear;
 }
 
 .special-section-nav > ul li:last-child {
@@ -294,9 +318,11 @@
 }
 
 .special-section-nav > ul li:hover {
-    color: #F7C531;
-    border-bottom: 2px solid #F7C531;
+    color: yellow;
+    border-radius: 30px;
     cursor: pointer;
+    background-color: red;
+    border-bottom: 2px solid transparent;
 }
 
 .food-image {
@@ -593,7 +619,11 @@
 }
 
 .footer ul li a {
+    border-bottom: 2px solid  transparent;
     text-decoration: none;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: linear;
 }
 
 .footer ul li, .footer ul li a {
@@ -609,7 +639,7 @@
 
 .footer ul li a:hover {
     color: #272042;
-    text-decoration: underline;
+    border-bottom: 2px solid  #272042;
 }
 
 .footer ul:last-child {
@@ -624,8 +654,6 @@
 }
 @media screen and (max-width:980px) {
     .footer{
-        /* position: relative;
-        display: inline-flex; */
         flex-wrap: wrap;
     }
     .footer ul {
