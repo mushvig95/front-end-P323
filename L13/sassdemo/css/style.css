@@ -1,0 +1,50 @@
+.first-ul {
+  border: 1px solid red;
+}
+.first-ul li {
+  list-style: none;
+}
+.first-ul li a {
+  text-decoration: none;
+  color: #458e7a;
+  font-size: 18px;
+}
+.first-ul li a:hover {
+  color: red;
+}
+.first-ul .first-ul_first-item a {
+  font-size: 28px;
+}
+
+.second-ul {
+  border: 1px solid darkcyan;
+}
+.second-ul li {
+  list-style: none;
+  border: 1px solid #458e7a;
+  padding: 10px;
+  width: fit-content;
+}
+.second-ul li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: red;
+}
+
+.mix {
+  border: 3px dashed red;
+  text-align: center;
+  color: red;
+}
+
+.mix2 {
+  border: 3px solid green;
+  text-align: center;
+  color: green;
+}
+
+.squaretest {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}

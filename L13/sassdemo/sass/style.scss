@@ -1,0 +1,29 @@
+@use './section1';
+@use './section2';
+
+@mixin border($borderWidth, $borderStyle, $color) {
+    border: $borderWidth $borderStyle $color;
+    text-align: center;
+    color: $color;
+}
+
+@mixin khasay($size, $radius: 0) {
+    width: $size;
+    height: $size;
+    border: 1px solid black;
+    @if $radius != 0 {
+        border-radius: $radius;
+    }
+}
+
+.mix {
+    @include border(3px, dashed, red)
+}
+
+.mix2 {
+    @include border(3px, solid, green)
+}
+
+.squaretest {
+    @include khasay(200px)
+}

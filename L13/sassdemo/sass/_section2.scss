@@ -1,0 +1,18 @@
+@import './variables';
+
+.second-ul {
+    border: 1px solid darkcyan;
+
+    li {
+        list-style: none;
+        border: 1px solid $color_primary;
+        padding: 10px;
+        width: fit-content;
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+            color: red;
+        }
+    }
+}
