@@ -44,6 +44,15 @@
   border-radius: 8px;
   margin-top: 20px;
 }
+.student-content__edit-btn {
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: none;
+  border: 1px solid orangered;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: orange;
+}
 
 table {
   width: 80%;
